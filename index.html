@@ -619,23 +619,229 @@
                                 <div id="skillsContainer" class="flex flex-wrap gap-2"></div>
                                 <p id="noSkillsMessage" class="text-sm text-gray-400 italic">No skills added yet. Start typing above!</p>
                             </div>
+                            <!-- Branch-wise Skills Tabs -->
                             <div class="space-y-4">
                                 <p class="text-sm font-medium text-gray-700">
-                                    <i class="fas fa-laptop-code mr-2 text-purple-500"></i>Quick Add Popular Skills:
+                                    <i class="fas fa-laptop-code mr-2 text-purple-500"></i>Quick Add Skills by Branch:
                                 </p>
-                                <div class="flex flex-wrap gap-2">
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Python</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">JavaScript</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">React</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Node.js</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Java</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">C++</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SQL</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MongoDB</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Git</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">AWS</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Docker</button>
-                                    <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Machine Learning</button>
+                                
+                                <!-- Branch Tabs -->
+                                <div class="flex flex-wrap gap-2 border-b border-gray-200 pb-3">
+                                    <button class="branch-tab active px-3 py-1.5 bg-purple-500 text-white rounded-lg text-xs font-medium transition-all" data-branch="cse">CSE/IT</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="ece">ECE</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="eee">EEE</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="mech">Mechanical</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="civil">Civil</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="aiml">AI/ML</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="ds">Data Science</button>
+                                    <button class="branch-tab px-3 py-1.5 bg-gray-100 text-gray-600 rounded-lg text-xs font-medium hover:bg-purple-100 transition-all" data-branch="cyber">Cyber Security</button>
+                                </div>
+
+                                <!-- CSE/IT Skills -->
+                                <div id="skills-cse" class="branch-skills">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-code mr-1"></i> Computer Science & IT</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">C</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">C++</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Java</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Python</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">JavaScript</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">HTML/CSS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">React</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Node.js</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SQL</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MongoDB</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">DSA</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">OOPs</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">DBMS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">OS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Computer Networks</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Git</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">AWS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Docker</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Linux</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">REST APIs</button>
+                                    </div>
+                                </div>
+
+                                <!-- ECE Skills -->
+                                <div id="skills-ece" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-microchip mr-1"></i> Electronics & Communication</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">C</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Embedded C</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">VHDL</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Verilog</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MATLAB</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Arduino</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Raspberry Pi</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">PCB Design</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Cadence</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">LTspice</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Signal Processing</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">VLSI Design</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">8051 Microcontroller</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">ARM</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">IoT</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Wireless Communication</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Antenna Design</button>
+                                    </div>
+                                </div>
+
+                                <!-- EEE Skills -->
+                                <div id="skills-eee" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-bolt mr-1"></i> Electrical & Electronics</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MATLAB</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Simulink</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">AutoCAD Electrical</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">ETAP</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Power Systems</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Control Systems</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Power Electronics</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">PLC Programming</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SCADA</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Electrical Machines</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Transformers</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Motor Drives</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Renewable Energy</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Solar PV Systems</button>
+                                    </div>
+                                </div>
+
+                                <!-- Mechanical Skills -->
+                                <div id="skills-mech" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-cogs mr-1"></i> Mechanical Engineering</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">AutoCAD</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SolidWorks</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">CATIA</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Creo</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">ANSYS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">FEA</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">CFD</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MATLAB</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Thermodynamics</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Fluid Mechanics</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Heat Transfer</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">CNC Programming</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">3D Printing</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">GD&T</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">IC Engines</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Robotics</button>
+                                    </div>
+                                </div>
+
+                                <!-- Civil Skills -->
+                                <div id="skills-civil" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-building mr-1"></i> Civil Engineering</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">AutoCAD</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Revit</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">BIM</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">STAAD Pro</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">ETABS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SAP2000</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Primavera</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MS Project</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Structural Analysis</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">RCC Design</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Surveying</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">GIS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Geotechnical Engineering</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Transportation Engineering</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Quantity Surveying</button>
+                                    </div>
+                                </div>
+
+                                <!-- AI/ML Skills -->
+                                <div id="skills-aiml" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-brain mr-1"></i> AI & Machine Learning</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Python</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">TensorFlow</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">PyTorch</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Keras</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Scikit-learn</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">NumPy</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Pandas</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">OpenCV</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">NLP</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Computer Vision</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Deep Learning</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Neural Networks</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">CNN</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">RNN</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Transformers</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">LLMs</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">MLOps</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Hugging Face</button>
+                                    </div>
+                                </div>
+
+                                <!-- Data Science Skills -->
+                                <div id="skills-ds" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-chart-bar mr-1"></i> Data Science & Analytics</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Python</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">R Programming</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SQL</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">NumPy</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Pandas</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Matplotlib</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Seaborn</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Tableau</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Power BI</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Excel</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Statistics</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Data Visualization</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Data Mining</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Hadoop</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Spark</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">ETL</button>
+                                    </div>
+                                </div>
+
+                                <!-- Cyber Security Skills -->
+                                <div id="skills-cyber" class="branch-skills hidden">
+                                    <p class="text-xs text-purple-600 font-medium mb-2"><i class="fas fa-shield-alt mr-1"></i> Cyber Security</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Ethical Hacking</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Penetration Testing</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Cryptography</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Network Security</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Wireshark</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Metasploit</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Burp Suite</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Nmap</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Kali Linux</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SIEM</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Firewall</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">IDS/IPS</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">OWASP</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Vulnerability Assessment</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">SOC</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 hover:border-purple-400 hover:text-purple-600 transition-all">Malware Analysis</button>
+                                    </div>
+                                </div>
+
+                                <!-- Soft Skills (Always Visible) -->
+                                <div class="mt-4 pt-4 border-t border-gray-200">
+                                    <p class="text-xs text-green-600 font-medium mb-2"><i class="fas fa-users mr-1"></i> Soft Skills (Common for All)</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Communication</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Problem Solving</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Team Work</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Leadership</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Time Management</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Critical Thinking</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Adaptability</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Project Management</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Presentation Skills</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Creativity</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Analytical Skills</button>
+                                        <button class="quick-skill px-3 py-1.5 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 hover:border-green-400 hover:bg-green-100 transition-all">Attention to Detail</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1161,6 +1367,11 @@
                 btn.addEventListener('click', () => { document.getElementById('skillInput').value = btn.textContent.trim(); addSkill(); });
             });
 
+            // Branch tab switching
+            document.querySelectorAll('.branch-tab').forEach(tab => {
+                tab.addEventListener('click', () => switchBranch(tab.dataset.branch));
+            });
+
             document.getElementById('addProjectBtn').addEventListener('click', addProject);
 
             document.getElementById('addCertBtn').addEventListener('click', addCertification);
@@ -1433,6 +1644,24 @@
         }
 
         function removeCertification(index) { portfolioData.certifications.splice(index, 1); renderCertifications(); updatePreview(); }
+
+        function switchBranch(branch) {
+            // Update tab styles
+            document.querySelectorAll('.branch-tab').forEach(tab => {
+                if (tab.dataset.branch === branch) {
+                    tab.classList.add('bg-purple-500', 'text-white');
+                    tab.classList.remove('bg-gray-100', 'text-gray-600');
+                } else {
+                    tab.classList.remove('bg-purple-500', 'text-white');
+                    tab.classList.add('bg-gray-100', 'text-gray-600');
+                }
+            });
+            // Show/hide skill sections
+            document.querySelectorAll('.branch-skills').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById('skills-' + branch).classList.remove('hidden');
+        }
 
         function selectTheme(card) {
             document.querySelectorAll('.theme-card').forEach(c => { c.classList.remove('selected', 'border-indigo-500'); c.classList.add('border-gray-200'); });
